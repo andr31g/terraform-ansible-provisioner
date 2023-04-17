@@ -78,7 +78,7 @@ To reverse the process, i.e., to destroy all the managed resources, issue:
 
 `$ terraform destroy --var-file=../../inputs/private/terraform/aws-dns.tfvars`
 
-or, if DNS was not used at at `apply` time, simply issue:
+or, if DNS was not used at the time of `apply`, simply issue:
 
 `$ terraform destroy`
 
