@@ -6,7 +6,7 @@ Below, is an overview of the directory structure used by this project. All versi
 resources are stored in the directory named 'deploy'. At the same level in the filesystem
 tree, there are also the following directories: 'images', 'inputs', 'outputs' and 'working'.
 
-`
+```
 ├── deploy
 ├── images
 ├── inputs
@@ -25,7 +25,7 @@ tree, there are also the following directories: 'images', 'inputs', 'outputs' an
 │   └── public
 └── working
     └── ansible
-`
+```
 
 The directory named 'inputs' contains files that are required as inputs during the runtime of the
 'terraform' and 'ansible' scripts. This directory is further subdivided into 'private' and 'public'
