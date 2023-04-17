@@ -74,7 +74,7 @@ when template files are instantiated, their reified versions are stored in the `
    it is by default, then the module `aws-dns` will not execute.
    
 
-To reverse the process, i.e., to destroy all the managed resources, issue:
+To reverse the process, i.e., to destroy all managed resources, issue:
 
 `$ terraform destroy --var-file=../../inputs/private/terraform/aws-dns.tfvars`
 
