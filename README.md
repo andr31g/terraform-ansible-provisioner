@@ -57,7 +57,7 @@ provider for 'terraform'.
 Lastly, the 'working' directory is a general-purpose working directory for the scripts. For example,
 when template files are instantiated, their reified versions are stored in the 'working' directory.
 
-
+`
 To run the 'aws' provisioner:
 
 1) Ensure the existence of valid AWS credentials in '~/.aws/credentials'
@@ -81,18 +81,20 @@ To run the 'aws' provisioner:
    of the DNS record. In the case of the second option, we're expressly choosing not to do
    any DNS modifications, because if the variable 'aws_dns_apply_records' is 'false', which
    it is by default, then the module 'aws-dns' will not execute.
-
+`
 
 To reverse the process, i.e., to destroy all the managed resources, issue:
 
+`
 $ terraform destroy --var-file=../../inputs/private/terraform/aws-dns.tfvars -auto-approve
-
+`
 
 To verify SSH access:
 
+`
 $ cd inputs/private/ssh
 $ ssh -o StrictHostKeyChecking=no -i ansible.priv ansible@<VM_PUBLIC_IP>
-
+`
 
 
 
