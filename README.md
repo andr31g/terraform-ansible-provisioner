@@ -21,7 +21,7 @@ tree, there are also the following directories: `images`, `inputs`, `outputs` an
 │   │   ├── ssh
 │   │   │   ├── ansible.priv
 │   │   └── terraform
-│   │          └── aws-dns.tfvars
+│   │       └── aws-dns.tfvars
 │   └── public
 │       └── ssh
 │           └── ansible.pub
