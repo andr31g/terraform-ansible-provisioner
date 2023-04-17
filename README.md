@@ -76,7 +76,12 @@ when template files are instantiated, their reified versions are stored in the `
 
 To reverse the process, i.e., to destroy all the managed resources, issue:
 
-`$ terraform destroy --var-file=../../inputs/private/terraform/aws-dns.tfvars -auto-approve`
+`$ terraform destroy --var-file=../../inputs/private/terraform/aws-dns.tfvars`
+
+or, if DNS was not used at at `apply` time, simply issue:
+
+`$ terraform destroy`
+
 
 To verify SSH access:
 
@@ -84,11 +89,3 @@ To verify SSH access:
 $ cd inputs/private/ssh
 $ ssh -o StrictHostKeyChecking=no -i ansible.priv ansible@<VM_PUBLIC_IP>
 ```
-
-
-
-
-
-
-
-
