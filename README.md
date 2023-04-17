@@ -8,11 +8,11 @@ tree, there are also the following directories: 'images', 'inputs', 'outputs' an
 
 `
 ├── deploy
-│   ├── aws
-│   ├── docs
-│   │   └── aws-credentials-howto.txt
-│   ├── libvirt
-│   ├── modules
+│   ├── aws
+│   ├── docs
+│   │   └── aws-credentials-howto.txt
+│   ├── libvirt
+│   ├── modules
 │   │   ├── ansible-payload-aws
 │   │   ├── ansible-payload-libvirt
 │   │   ├── ansible-run
