@@ -1,3 +1,8 @@
+# About
+
+This project aims to make it easier to use 'terraform' and 'ansible' to provision VMs on
+different cloud vendors. Initial release has support for 'aws' and 'libvirt' providers.
+
 General idea is to keep the version control repo clean. In other words, not only do we not
 want sensitive credentials to wind up in a 'git' repo, but we also want to avoid the 'git'
 working tree from being polluted by various runtime artifacts of 'terraform' and 'ansible'.
@@ -44,7 +49,7 @@ provider for 'terraform'.
 Lastly, the 'working' directory is a general-purpose working directory for the scripts. For example,
 when template files are instantiated, their reified versions are stored in the 'working' directory.
 
-To run the 'aws' provisioner:
+# To run the 'aws' provisioner:
 
 1) Ensure the existence of valid AWS credentials in '~/.aws/credentials'
    (see 'deploy/docs/aws-credentials-howto.txt' for more information)
