@@ -6,11 +6,6 @@ manage_etc_hosts: true
 ssh_pwauth: false
 disable_root: true
 
-#
-# firewall-cmd --permanent ssh
-# firewall-cmd --permanent https
-#
-
 users:
   - name: ansible
     lock_passwd: True
