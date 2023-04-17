@@ -98,5 +98,5 @@ To verify SSH access via a fully-qualified domain name:
 
 ```
 $ cd inputs/private/ssh
-$ ssh -o StrictHostKeyChecking=no -i ansible.priv ansible@FQDN
+$ ssh -o StrictHostKeyChecking=no -i ansible.priv ansible@<FQDN>
 ```
