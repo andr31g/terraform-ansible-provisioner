@@ -8,29 +8,16 @@ tree, there are also the following directories: 'images', 'inputs', 'outputs' an
 
 `
 ├── deploy
-│   ├── aws
-│   ├── docs
-│   │   └── aws-credentials-howto.txt
-│   ├── libvirt
-│   ├── modules
-│   │   ├── ansible-payload-aws
-│   │   ├── ansible-payload-libvirt
-│   │   ├── ansible-run
-│   │   ├── aws-dns
-│   │   ├── aws-firewall
-│   │   └── aws-vpc
-│   └── README.md
 ├── images
-│   └── focal-server-cloudimg-amd64-disk-kvm-resized.img
 ├── inputs
-│   ├── private
-│   │   ├── agent
-│   │   │   └── token.txt
-│   │   ├── ssh
-│   │   │   ├── ansible.priv
-│   │   └── terraform
-│   │       └── aws-dns.tfvars
-│   └── public
+│   ├── private
+│   │   ├── agent
+│   │   │   └── token.txt
+│   │   ├── ssh
+│   │   │   ├── ansible.priv
+│   │   └── terraform
+│   │          └── aws-dns.tfvars
+│   └── public
 │       └── ssh
 │           └── ansible.pub
 ├── outputs
@@ -57,7 +44,6 @@ provider for 'terraform'.
 Lastly, the 'working' directory is a general-purpose working directory for the scripts. For example,
 when template files are instantiated, their reified versions are stored in the 'working' directory.
 
-`
 To run the 'aws' provisioner:
 
 1) Ensure the existence of valid AWS credentials in '~/.aws/credentials'
@@ -81,7 +67,7 @@ To run the 'aws' provisioner:
    of the DNS record. In the case of the second option, we're expressly choosing not to do
    any DNS modifications, because if the variable 'aws_dns_apply_records' is 'false', which
    it is by default, then the module 'aws-dns' will not execute.
-`
+   
 
 To reverse the process, i.e., to destroy all the managed resources, issue:
 
