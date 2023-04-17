@@ -83,9 +83,20 @@ or, if DNS was not used at the time of `apply`, simply issue:
 `$ terraform destroy`
 
 
-To verify SSH access:
+To verify SSH access via a public `IPv4` address:
+(This address is an output of the `root terraform` module,
+ as well as being printed to the `stdout` after `apply` completes)
 
 ```
 $ cd inputs/private/ssh
 $ ssh -o StrictHostKeyChecking=no -i ansible.priv ansible@<VM_PUBLIC_IP>
+```
+
+To verify SSH access via a fully-qualified domain name:
+(This `FQDN` is an output of the `aws-dns terraform` module,
+ as well as being printed to the `stdout` after `apply` completes)
+
+```
+$ cd inputs/private/ssh
+$ ssh -o StrictHostKeyChecking=no -i ansible.priv ansible@FQDN
 ```
